@@ -15,6 +15,10 @@
   font-family: poppins, sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 /* header */
 .nav-bar {
   width: 100%;
@@ -137,4 +141,52 @@ p {
 
 .img-plataform {
   width: 259px;
+}
+
+/* barra horizontal */
+
+.box-bar {
+  max-width: 1280px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 12px 32px;
+  position: relative;
+  z-index: 1;
+  border-radius: 12px;
+  box-shadow: 0px 6px 12px rgba(19, 94, 172, 0.12);
+}
+.image-box {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.img-box {
+  width: 32px;
+}
+
+.title-box {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.subt-box {
+  font-size: 14px;
+  font-weight: 400;
+  color: #b6b6b6;
+}
+
+.btn-box {
+  padding: 18px 51px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--blue-color);
+  color: #fff;
+}
+
+.btn-box:hover {
+  transform: scale(1.1);
+  transition: 0.4s;
 }
