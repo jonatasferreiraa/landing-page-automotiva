@@ -1,0 +1,140 @@
+/* cores padrões do site */
+:root {
+  --blue-color: #1572d3;
+  --light-blue: #1572d3;
+  --gray-color: #484848;
+  --graphite-color: #333333;
+  --light-gray: rgba(21, 114, 211, 0.1);
+}
+
+/* configuração global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins, sans-serif;
+}
+
+/* header */
+.nav-bar {
+  width: 100%;
+}
+
+.nav-inner {
+  margin: auto;
+  max-width: 1280px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.menu-bar {
+  display: flex;
+  gap: 40px;
+}
+
+a {
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--gray-color);
+}
+
+a:hover {
+  text-decoration: underline 3px var(--blue-color);
+}
+
+.btns-log {
+  display: flex;
+  gap: 24px;
+}
+
+button {
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn-login {
+  background: none;
+  border: none;
+  color: var(--gray-color);
+}
+
+.btn-register {
+  border: none;
+  border-radius: 8px;
+  padding: 16px 32px;
+  color: #fff;
+  background-color: var(--blue-color);
+}
+
+.btn-register:hover {
+  transform: scale(1.1);
+  transition: 0.4s;
+}
+
+/* seção hero */
+
+.hero-section {
+  min-height: 700px;
+  display: flex;
+  align-items: center;
+}
+
+.container-hero {
+  max-width: 1280px;
+  margin: 0 auto; /* Centraliza o container */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-text {
+  position: relative;
+  max-width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 40px;
+  z-index: 1;
+}
+
+.hero-image {
+  max-width: 50%;
+  margin-top: 100px;
+}
+
+.img-car-hero {
+  position: relative;
+  width: 1260px;
+  z-index: 1;
+}
+
+.bg-hero-logo {
+  position: absolute;
+  bottom: -120px;
+  right: 400px;
+  width: 803px;
+  z-index: 0;
+}
+
+h1 {
+  font-size: 48px;
+  color: #242424;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--p-hero);
+}
+
+#text-blue {
+  color: var(--blue-color);
+}
+
+.img-plataform {
+  width: 259px;
+}
